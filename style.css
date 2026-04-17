@@ -1,0 +1,86 @@
+/*Main assets including colors*/
+body {
+    margin: 0;
+    padding: 0;
+    /*A different font will be added last (K2D)*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #3E6259;
+    --primary-color: #EAEAEA;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/*-----------------------------------------*/
+
+nav {
+    display: flex;
+    background-color: black;
+    margin: 0;
+    a {
+        justify-self: flex-end;
+        background-color: var(--primary-color);
+        color: black;
+        text-decoration: none;
+        margin: 1rem;
+    }
+}
+
+/*-----------------------------------------*/
+
+#hero {
+    margin: 0;
+    height: 86%;
+    align-content: center;
+    background-color: white;/*Temp color*/
+    margin-bottom: 4em;
+    /*Needs a drawn background*/
+    h1 {
+        color: black;
+    }
+}
+
+/*-----------------------------------------*/
+/*Content area for RECENT Projects*/
+h1 {
+    text-align: center;
+    color: var(--text-color);
+}
+
+#project-boxes {
+    background-color: #EAEAEA;
+    height: 80%;
+    margin-bottom: 2em;
+}
+#project-tabs {
+    text-decoration: none;
+}
+
+/*-----------------------------------------*/
+/* Button assets*/
+
+button { /*Need to get rid of the border color/outline*/
+    background-color: var(--primary-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 25px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/*Footer assets*/
+
+footer {
+    text-align: center;
+    color: var(--text-color);
+}
