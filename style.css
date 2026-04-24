@@ -12,9 +12,11 @@ body {
 :root {
     --bg-color: #3E6259;
     --primary-color: #EAEAEA;
-    --text-color: white;
+    --head-color: white;
+    --text-color: black;
     --nav-color: #1c1c1c;
-    --hover-color: #bfbfbf;
+    --clicked-color: #BFCF17;
+    --hover-color: #ECF39E;
 }
 
 body {
@@ -24,12 +26,16 @@ body {
 /*-----------------------------------------*/
 
 nav {
-    display: flex;
-    justify-content: flex-end;
     overflow: hidden;
     background-color: var(--nav-color);
     margin: 0;
     padding: 0;
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+    }
 
     li {
         list-style-type: none; /*This gets rid of the list bullet points*/
@@ -37,7 +43,7 @@ nav {
 
     a {
         display: block;
-        margin-left: 1rem;
+        margin-right: 1rem;
         padding: 14px 16px;
         background-color: var(--primary-color);
         color: black;
@@ -66,18 +72,70 @@ nav {
 /*Content area for RECENT Projects*/
 h1 {
     text-align: center;
-    color: var(--text-color);
+    color: var(--head-color);
 }
 
-#project-boxes {
-    background-color: #EAEAEA;
+body > #project-content {
+    display: flex;
+    justify-items: center;
+}
+#project-content {
+    display: flex;
+    justify-self: center;
+    background-color: black; /*Temp color*/
+    width: 98%;
     height: 80%;
     margin-bottom: 2em;
 }
-#project-tabs {
-    text-decoration: none;
+
+#project-tabs > ul{
+    list-style-type: none;
+    height: 100%;
+    background-color: purple;
+    max-width: max-content;
+    padding: 50px;
+    margin: 0;
+    color: var(--text-color);
+
+    h3 {
+        color: var(--head-color);
+    }
+
+    li {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    li:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
+    }
 }
 
+#project-boxes {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color); /*Temp color*/
+    width: 230px;;
+    height: 300px;
+    margin: 2em;
+
+    #content {
+        background-color: blue; /*Temp color*/
+        margin: 1rem;
+        width: 80%;
+        height: 50%;
+    }
+
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 18px;
+}
 /*-----------------------------------------*/
 /* Button assets*/
 
@@ -96,5 +154,6 @@ button:hover {
 
 footer {
     text-align: center;
-    color: var(--text-color);
+    color: var(--head-color);
+    margin-bottom: 1rem;
 }
