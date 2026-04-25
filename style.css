@@ -79,12 +79,13 @@ body > #project-content {
     display: flex;
     justify-items: center;
 }
+
 #project-content {
     display: flex;
     justify-self: center;
     background-color: black; /*Temp color*/
-    width: 98%;
-    height: 80%;
+    width: 100%;
+    height: fit-content;
     margin-bottom: 2em;
 }
 
@@ -95,16 +96,19 @@ body > #project-content {
     max-width: max-content;
     padding: 50px;
     margin: 0;
+    margin-right: 4.5rem;
     color: var(--text-color);
 
     h3 {
         color: var(--head-color);
+        text-align: center;
     }
 
     li {
         background-color: var(--primary-color);
-        padding: 1rem;
+        padding: 50px;
         margin-top: 1rem;
+        text-align: center;
     }
 
     li:hover {
@@ -113,7 +117,15 @@ body > #project-content {
     }
 }
 
+#tab-btn {
+    position: sticky;
+}
+
 #project-boxes {
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+    grid-row-start: span 2;
+    grid-row-end: span 2;
     display: flex;
     justify-content: center;
     background-color: var(--primary-color); /*Temp color*/
@@ -128,13 +140,18 @@ body > #project-content {
         height: 50%;
     }
 
+    #buttons {
+        grid-column-start: 6;
+        grid-column-end: span 8;
+    }
 }
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(12, auto);
+    grid-template-columns: repeat(15, auto);
     grid-template-rows: repeat(8, auto);
     gap: 18px;
+    max-height: fit-content;
 }
 /*-----------------------------------------*/
 /* Button assets*/
