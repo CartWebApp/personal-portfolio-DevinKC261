@@ -38,16 +38,27 @@ nav {
     }
 
     li {
+    /* Shape content*/
+    --p: 50px;
+    aspect-ratio: 3/2;
+    clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
+    width: 180px;
+    height: 50px;
+
+    /* Main content for nav*/
+        align-items: center;
+        display: inline-block;
+        margin-right: 15px;
         list-style-type: none; /*This gets rid of the list bullet points*/
     }
 
     a {
         display: block;
-        margin-right: 1rem;
-        padding: 14px 16px;
         background-color: var(--primary-color);
+            height: 50px;
         color: black;
         text-decoration: none;
+        text-align: center;
     }
     a:hover {
         background-color: var(--hover-color);
@@ -59,6 +70,7 @@ nav {
 #hero {
     margin: 0;
     height: 86%;
+    width: 100%;
     align-content: center;
     background-color: white;/*Temp color*/
     margin-bottom: 4em;
@@ -83,7 +95,6 @@ body > #project-content {
 #project-content {
     display: flex;
     justify-self: center;
-    background-color: black; /*Temp color*/
     width: 100%;
     height: fit-content;
     margin-bottom: 2em;
@@ -92,7 +103,7 @@ body > #project-content {
 #project-tabs > ul{
     list-style-type: none;
     height: 100%;
-    background-color: purple;
+    border-right: solid 2px #EAEAEA;
     max-width: max-content;
     padding: 50px;
     margin: 0;
@@ -148,7 +159,7 @@ body > #project-content {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(15, auto);
+    grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(8, auto);
     gap: 18px;
     max-height: fit-content;
