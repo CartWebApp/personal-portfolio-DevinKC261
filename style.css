@@ -55,7 +55,7 @@ nav {
     a {
         display: block;
         background-color: var(--primary-color);
-            height: 50px;
+        height: 50px;
         color: black;
         text-decoration: none;
         text-align: center;
@@ -120,6 +120,7 @@ body > #project-content {
         padding: 50px;
         margin-top: 1rem;
         text-align: center;
+        
     }
 
     li:hover {
@@ -164,6 +165,7 @@ body > #project-content {
     gap: 18px;
     max-height: fit-content;
 }
+
 /*-----------------------------------------*/
 /* Button assets*/
 
@@ -177,6 +179,29 @@ button { /*Need to get rid of the border color/outline*/
 button:hover {
     cursor: pointer;
 }
+
+/*-----------------------------------------*/
+/*About me page assets*/
+
+#intro-container {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(12, auto);
+    gap: 8px;
+}
+
+#intro {
+    display: flex;
+    grid-column-start: span 12;
+    grid-row-start: span 2;
+    background-color: red;
+}
+
+#trait {
+    background-color: red;
+}
+
+
 
 /*Footer assets*/
 
