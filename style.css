@@ -53,12 +53,15 @@ nav {
     }
 
     a {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: var(--primary-color);
+        margin: 0;
+        padding: 0;
         height: 50px;
         color: black;
         text-decoration: none;
-        text-align: center;
     }
     a:hover {
         background-color: var(--hover-color);
@@ -169,14 +172,14 @@ body > #project-content {
 /*-----------------------------------------*/
 /* Button assets*/
 
-button { /*Need to get rid of the border color/outline*/
+#buttons { /*Need to get rid of the border color/outline*/
     background-color: var(--primary-color);
     width: 36px;
     height: 36px;
     border-radius: 25px;
 }
 
-button:hover {
+#buttons:hover {
     cursor: pointer;
 }
 
@@ -201,8 +204,36 @@ button:hover {
     background-color: red;
 }
 
+#resume_content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
 
+#resume_container {
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+    grid-template-rows: repeat(8, auto);
+    gap: 8px;
+}
 
+#resume_holder  {
+    display: flex;
+    grid-column-start: 6;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 400px;
+    height: 500px;
+
+    #resume_download {
+        height: 50px;
+        width: 145px;
+    }
+}
+
+div#resume {
+    background-color: black;
+}
 /*Footer assets*/
 
 footer {
