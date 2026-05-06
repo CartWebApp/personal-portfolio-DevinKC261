@@ -83,8 +83,8 @@ nav {
     }
 }
 
-/*-----------------------------------------*/
-/*Content area for RECENT Projects*/
+/*-----------------Content area for RECENT Projects-----------------*/
+
 h1 {
     text-align: center;
     color: var(--head-color);
@@ -169,8 +169,8 @@ body > #project-content {
     max-height: fit-content;
 }
 
-/*-----------------------------------------*/
-/* Button assets*/
+/*----------------Button assets----------------*/
+
 
 #buttons { /*Need to get rid of the border color/outline*/
     background-color: var(--primary-color);
@@ -183,8 +183,7 @@ body > #project-content {
     cursor: pointer;
 }
 
-/*-----------------------------------------*/
-/*About me page assets*/
+/*--------------About me page assets--------------*/
 
 #intro-container {
     display: grid;
@@ -204,6 +203,7 @@ body > #project-content {
     background-color: red;
 }
 
+<<<<<<< Updated upstream
 #resume_content {
     display: flex;
     height: 100%;
@@ -213,10 +213,18 @@ body > #project-content {
 #resume_container {
     display: grid;
     grid-template-columns: repeat(12, auto);
+=======
+/*-------Contact page styling-------*/
+
+#Content-container {
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+>>>>>>> Stashed changes
     grid-template-rows: repeat(8, auto);
     gap: 8px;
 }
 
+<<<<<<< Updated upstream
 #resume_holder  {
     display: flex;
     grid-column-start: 6;
@@ -235,6 +243,32 @@ div#resume {
     background-color: black;
 }
 /*Footer assets*/
+=======
+#contact-links {
+    /*Grid positioning*/
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: auto;
+
+    /*Design and content*/
+    background-color: var(--primary-color);
+    height: 150px;
+    width: 150px;
+}
+
+#mail-container {
+    /*Grid positioning*/
+    grid-row-start: 5;
+    grid-row-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 9;
+
+    /*Design and content*/
+    background-color: var(--primary-color);
+}
+/*---------Footer assets---------*/
+>>>>>>> Stashed changes
 
 footer {
     text-align: center;
