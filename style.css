@@ -38,18 +38,19 @@ nav {
     }
 
     li {
-    /* Shape content*/
-    --p: 50px;
-    aspect-ratio: 3/2;
-    clip-path: polygon(var(--p) 0,100% 0,calc(100% - var(--p)) 100%,0 100%);
-    width: 180px;
-    height: 50px;
+        /* Shape content*/
+        --p: 50px;
+        aspect-ratio: 3/2;
+        clip-path: polygon(var(--p) 0, 100% 0, calc(100% - var(--p)) 100%, 0 100%);
+        width: 180px;
+        height: 50px;
 
-    /* Main content for nav*/
+        /* Main content for nav*/
         align-items: center;
         display: inline-block;
         margin-right: 15px;
-        list-style-type: none; /*This gets rid of the list bullet points*/
+        list-style-type: none;
+        /*This gets rid of the list bullet points*/
     }
 
     a {
@@ -63,6 +64,7 @@ nav {
         color: black;
         text-decoration: none;
     }
+
     a:hover {
         background-color: var(--hover-color);
     }
@@ -75,8 +77,10 @@ nav {
     height: 86%;
     width: 100%;
     align-content: center;
-    background-color: white;/*Temp color*/
+    background-color: white;
+    /*Temp color*/
     margin-bottom: 4em;
+
     /*Needs a drawn background*/
     h1 {
         color: black;
@@ -90,7 +94,7 @@ h1 {
     color: var(--head-color);
 }
 
-body > #project-content {
+body>#project-content {
     display: flex;
     justify-items: center;
 }
@@ -103,7 +107,7 @@ body > #project-content {
     margin-bottom: 2em;
 }
 
-#project-tabs > ul{
+#project-tabs>ul {
     list-style-type: none;
     height: 100%;
     border-right: solid 2px #EAEAEA;
@@ -123,7 +127,7 @@ body > #project-content {
         padding: 50px;
         margin-top: 1rem;
         text-align: center;
-        
+
     }
 
     li:hover {
@@ -143,13 +147,16 @@ body > #project-content {
     grid-row-end: span 2;
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color); /*Temp color*/
-    width: 230px;;
+    background-color: var(--primary-color);
+    /*Temp color*/
+    width: 230px;
+    ;
     height: 300px;
     margin: 2em;
 
     #content {
-        background-color: blue; /*Temp color*/
+        background-color: blue;
+        /*Temp color*/
         margin: 1rem;
         width: 80%;
         height: 50%;
@@ -172,7 +179,8 @@ body > #project-content {
 /*----------------Button assets----------------*/
 
 
-#buttons { /*Need to get rid of the border color/outline*/
+#buttons {
+    /*Need to get rid of the border color/outline*/
     background-color: var(--primary-color);
     width: 36px;
     height: 36px;
@@ -203,7 +211,6 @@ body > #project-content {
     background-color: red;
 }
 
-<<<<<<< Updated upstream
 #resume_content {
     display: flex;
     height: 100%;
@@ -213,19 +220,11 @@ body > #project-content {
 #resume_container {
     display: grid;
     grid-template-columns: repeat(12, auto);
-=======
-/*-------Contact page styling-------*/
-
-#Content-container {
-    display: grid;
-    grid-template-columns: repeat(11, auto);
->>>>>>> Stashed changes
     grid-template-rows: repeat(8, auto);
     gap: 8px;
 }
 
-<<<<<<< Updated upstream
-#resume_holder  {
+#resume_holder {
     display: flex;
     grid-column-start: 6;
     justify-content: center;
@@ -242,33 +241,51 @@ body > #project-content {
 div#resume {
     background-color: black;
 }
-/*Footer assets*/
-=======
-#contact-links {
-    /*Grid positioning*/
-    grid-column-start: 3;
-    grid-column-end: span 2;
-    grid-row-start: 1;
-    grid-row-end: auto;
 
-    /*Design and content*/
-    background-color: var(--primary-color);
-    height: 150px;
-    width: 150px;
+/*--------------Contacts page--------------*/
+
+#content-container {
+    display: flex;
+    justify-self: center;
+    width: fit-content;
+    max-width: max-content;
+    height: fit-content;
+    max-height: fit-content;
+}
+
+#link-container {
+    width: max-content;
+    height: fit-content;
+    margin: 25px;
+}
+
+#contact-links {
+    display: flex;
+    justify-self: center;
+
+    #link_boxs {
+        background-color: var(--primary-color);
+        width: 150px;
+        height: 150px;
+        margin: 15px;
+    }
 }
 
 #mail-container {
-    /*Grid positioning*/
-    grid-row-start: 5;
-    grid-row-end: 8;
-    grid-column-start: 4;
-    grid-column-end: 9;
-
-    /*Design and content*/
+    display: flex;
+    justify-self: center;
+    justify-content: center;
     background-color: var(--primary-color);
+    margin: 25px;
+    width: fit-content;
+    height: 150px;
+    #h2 {
+        justify-self: center;
+    }
 }
-/*---------Footer assets---------*/
->>>>>>> Stashed changes
+
+
+/*Footer assets*/
 
 footer {
     text-align: center;
