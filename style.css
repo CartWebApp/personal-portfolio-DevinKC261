@@ -94,9 +94,14 @@ h1 {
     color: var(--head-color);
 }
 
+h2 {
+    text-align: center;
+    color: white
+}
+
 body>#project-content {
     display: flex;
-    justify-items: center;
+    justify-content: center;
 }
 
 #project-content {
@@ -111,9 +116,11 @@ body>#project-content {
     list-style-type: none;
     height: 100%;
     border-right: solid 2px #EAEAEA;
+    border-left: solid 2px #EAEAEA;
     max-width: max-content;
-    padding: 50px;
+    padding: 25px;
     margin: 0;
+    border-radius: 25px;
     margin-right: 4.5rem;
     color: var(--text-color);
 
@@ -124,9 +131,11 @@ body>#project-content {
 
     li {
         background-color: var(--primary-color);
-        padding: 50px;
-        margin-top: 1rem;
+        padding: 25px;
+        width: 145px;
+        margin-top: 3rem;
         text-align: center;
+        border-radius: 25px;
 
     }
 
@@ -147,6 +156,7 @@ body>#project-content {
     grid-row-end: span 2;
     display: flex;
     justify-content: center;
+    border-radius: 25px;
     background-color: var(--primary-color);
     /*Temp color*/
     width: 230px;
@@ -174,6 +184,8 @@ body>#project-content {
     grid-template-rows: repeat(8, auto);
     gap: 18px;
     max-height: fit-content;
+    border-right: solid 2px #EAEAEA;
+    border-radius: 25px;
 }
 
 /*----------------Button assets----------------*/
@@ -201,14 +213,52 @@ body>#project-content {
 }
 
 #intro {
+    margin: 5vh;
     display: flex;
     grid-column-start: span 12;
     grid-row-start: span 2;
-    background-color: red;
+    background-color: var(--primary-color);
+    height: 50vh;
+    width: 100vh;
+
+    p {
+        text-align: left;
+        justify-self: flex-end;
+        background-color: red;
+        width: 50vh;
+        height: 25vh;
+    }
+
+    img {
+        justify-self: flex-start;
+        background-color: #3E6259;
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+#link-buttons {
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+    background-color: #3E6259;
+    text-align: center;
+    width: 235px;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+
+    a:hover {
+        cursor: pointer;
+    }
 }
 
 #trait {
-    background-color: red;
+    background-color: var(--primary-color);
+}
+
+#trait-container {
+    margin: 5vh;
 }
 
 #resume_content {
@@ -265,23 +315,35 @@ div#resume {
 
     #link_boxs {
         background-color: var(--primary-color);
+        margin: 15px;
+        border-radius: 25px;
+    }
+
+    img {
         width: 150px;
         height: 150px;
-        margin: 15px;
     }
+
+    ;
+}
+
+#links {
+    text-align: center;
+}
+
+#contact-email {
+    display: flex;
+    justify-content: center;
 }
 
 #mail-container {
-    display: flex;
     justify-self: center;
-    justify-content: center;
     background-color: var(--primary-color);
     margin: 25px;
-    width: fit-content;
-    height: 150px;
-    #h2 {
-        justify-self: center;
-    }
+    width: 500px;
+    height: fit-content;
+    padding: 15px;
+    border-radius: 25px;
 }
 
 
