@@ -9,6 +9,10 @@ body {
     box-sizing: border-box;
 }
 
+p {
+    font-size: 25px;
+}
+
 :root {
     --bg-color: #3E6259;
     --primary-color: #EAEAEA;
@@ -84,20 +88,23 @@ nav {
     /*Needs a drawn background*/
     h1 {
         color: black;
+        font-size: 50px;
     }
 }
 
 /*-----------------Content area for RECENT Projects-----------------*/
 
 h1 {
+    margin: 2rem;
     text-align: center;
     color: var(--head-color);
+    font-size: 45px;
 }
 
 
 h2 {
     text-align: center;
-    color: white
+    color: white;
 }
 
 body>#project-content {
@@ -211,7 +218,6 @@ body>#project-content {
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(12, auto);
     gap: 8px;
-
 }
 
 #intro {
@@ -226,8 +232,8 @@ body>#project-content {
 }
 
 #intro-img {
-    width: 400px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-color: red;
     margin-right: 5rem;
 }
@@ -235,7 +241,6 @@ body>#project-content {
 #intro-text {
     background-color: red;
     padding: 1rem;
-    width: 80vh;
     height: fit-content;
 }
 
@@ -244,15 +249,20 @@ body>#project-content {
 }
 
 #link-buttons {
+    display: flex;
+    justify-self: flex-start;
+    justify-content: center;
     text-decoration: none;
-    color: white;
+    flex-wrap: wrap;
+    color: black;
     margin: 5px;
-    background-color: #3E6259;
+    background-color: var(--primary-color);
     text-align: center;
     width: 235px;
     height: fit-content;
     padding: 15px;
     border-radius: 15px;
+    border: solid 2px black;
 
     a:hover {
         cursor: pointer;
@@ -261,13 +271,15 @@ body>#project-content {
 
 #trait {
     display: flex;
+    width: fit-content;
+    height: fit-content;
     background-color: var(--primary-color);
     padding: 1rem;
     margin: 1rem;
 
     #trait-img {
         background-color: black;
-        height: 250px;
+        height: 350px;
         width: 350px;
     }
 
@@ -280,10 +292,15 @@ body>#project-content {
     margin: 5vh;
 
     h2 {
+        justify-self: flex-start;
+        font-size: 30px;
         margin-left: 1rem;
         color: white;
     }
 }
+
+
+/*----------Resume Content-----------------*/
 
 #resume_content {
     display: flex;
@@ -291,26 +308,37 @@ body>#project-content {
     width: 100%;
 }
 
+
 #resume_container {
-    display: grid;
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(8, auto);
-    gap: 8px;
+    display: flex;
+    justify-content: center;
 }
 
 #resume_holder {
     display: flex;
+    flex-wrap: wrap;
     grid-column-start: 6;
     justify-content: center;
-    background-color: var(--primary-color);
-    width: fit-content;
     height: fit-content;
+    width: 550px;
+    margin: 1rem;
 
     #resume_download {
-        height: 50px;
-        width: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
         margin: 1rem;
+        width: 225px;
+        height: 50px;
+        border: solid 2px black;
+        background-color: var(--primary-color);
     }
+}
+
+#resume_download:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
 }
 
 #resume {
@@ -319,25 +347,33 @@ body>#project-content {
     height: 800px;
 }
 
-#resume-download>a {
-    width: 125px;
-    height: 50px;
-}
 
 #external_links {
-    background-color: red;
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
     height: fit-content;
-    width: fit-content;
+    text-align: center;
 
-    a {
-        width: 125px;
+    #exlink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        margin: 1rem;
+        width: 225px;
+        height: 50px;
+        border: solid 2px black;
+        background-color: var(--primary-color);
+    }
+
+    #exlink:hover {
+        cursor: pointer;
+        background-color: var(--hover-color);
     }
 }
 
-#exlink {
-    background-color: var(--primary-color);
-    margin: 1rem;
-}
 
 /*--------------Contacts page--------------*/
 
@@ -370,8 +406,6 @@ body>#project-content {
         width: 150px;
         height: 150px;
     }
-
-    ;
 }
 
 #links {
@@ -398,6 +432,30 @@ body>#project-content {
     border-radius: 25px;
 }
 
+
+/*--------Projects page-------------*/
+
+#lg-project-boxes {
+    display: flex;
+    font-size: 15px;
+    background-color: var(--primary-color);
+    height: fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    border: solid 2px black;
+    margin-bottom: 1rem;
+
+    img {
+        border-radius: 25px;
+        width: 250px;
+        height:  250px;
+    };
+
+    p {
+        margin-left: 1rem;
+        padding: 25px;
+    }
+}
 
 /*Footer assets*/
 
