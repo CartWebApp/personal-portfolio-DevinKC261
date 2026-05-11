@@ -94,6 +94,7 @@ h1 {
     color: var(--head-color);
 }
 
+
 h2 {
     text-align: center;
     color: white
@@ -210,6 +211,7 @@ body>#project-content {
     grid-template-columns: repeat(12, auto);
     grid-template-rows: repeat(12, auto);
     gap: 8px;
+
 }
 
 #intro {
@@ -218,23 +220,27 @@ body>#project-content {
     grid-column-start: span 12;
     grid-row-start: span 2;
     background-color: var(--primary-color);
-    height: 50vh;
-    width: 100vh;
+    height: fit-content;
+    width: fit-content;
+    padding: 1rem;
+}
 
-    p {
-        text-align: left;
-        justify-self: flex-end;
-        background-color: red;
-        width: 50vh;
-        height: 25vh;
-    }
+#intro-img {
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    margin-right: 5rem;
+}
 
-    img {
-        justify-self: flex-start;
-        background-color: #3E6259;
-        width: 50vh;
-        height: 50vh;
-    }
+#intro-text {
+    background-color: red;
+    padding: 1rem;
+    width: 80vh;
+    height: fit-content;
+}
+
+#intro-button {
+    margin-top: 3rem;
 }
 
 #link-buttons {
@@ -254,11 +260,29 @@ body>#project-content {
 }
 
 #trait {
+    display: flex;
     background-color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
+
+    #trait-img {
+        background-color: black;
+        height: 250px;
+        width: 350px;
+    }
+
+    p {
+        margin-left: 1rem;
+    }
 }
 
 #trait-container {
     margin: 5vh;
+
+    h2 {
+        margin-left: 1rem;
+        color: white;
+    }
 }
 
 #resume_content {
@@ -279,17 +303,40 @@ body>#project-content {
     grid-column-start: 6;
     justify-content: center;
     background-color: var(--primary-color);
-    width: 400px;
-    height: 500px;
+    width: fit-content;
+    height: fit-content;
 
     #resume_download {
         height: 50px;
-        width: 145px;
+        width: 125px;
+        margin: 1rem;
     }
 }
 
-div#resume {
+#resume {
     background-color: black;
+    width: 550px;
+    height: 800px;
+}
+
+#resume-download>a {
+    width: 125px;
+    height: 50px;
+}
+
+#external_links {
+    background-color: red;
+    height: fit-content;
+    width: fit-content;
+
+    a {
+        width: 125px;
+    }
+}
+
+#exlink {
+    background-color: var(--primary-color);
+    margin: 1rem;
 }
 
 /*--------------Contacts page--------------*/
@@ -329,6 +376,11 @@ div#resume {
 
 #links {
     text-align: center;
+
+    h3 {
+        text-decoration: none;
+        color: white;
+    }
 }
 
 #contact-email {
