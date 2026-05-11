@@ -353,6 +353,7 @@ body>#project-content {
     background-color: black;
     width: 550px;
     height: 800px;
+    background-image: url(imgs/resume/Devin\ chantirath.pdf);
 }
 
 
@@ -438,6 +439,10 @@ body>#project-content {
     height: fit-content;
     padding: 15px;
     border-radius: 25px;
+
+    a {
+        margin-bottom: 1rem;
+    }
 }
 
 
