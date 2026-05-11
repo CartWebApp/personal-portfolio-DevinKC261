@@ -103,6 +103,7 @@ h1 {
 
 
 h2 {
+    font-size:45px;
     text-align: center;
     color: white;
 }
@@ -129,12 +130,14 @@ body>#project-content {
     padding: 25px;
     margin: 0;
     border-radius: 25px;
-    margin-right: 4.5rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
     color: var(--text-color);
 
     h3 {
         color: var(--head-color);
         text-align: center;
+        font-size: 25px;
     }
 
     li {
@@ -194,6 +197,7 @@ body>#project-content {
     max-height: fit-content;
     border-right: solid 2px #EAEAEA;
     border-radius: 25px;
+    margin-right: 2rem;
 }
 
 /*----------------Button assets----------------*/
@@ -229,6 +233,7 @@ body>#project-content {
     height: fit-content;
     width: fit-content;
     padding: 1rem;
+    border-radius: 25px;
 }
 
 #intro-img {
@@ -246,6 +251,7 @@ body>#project-content {
 
 #intro-button {
     margin-top: 3rem;
+
 }
 
 #link-buttons {
@@ -256,6 +262,7 @@ body>#project-content {
     flex-wrap: wrap;
     color: black;
     margin: 5px;
+    margin-bottom: 2rem;
     background-color: var(--primary-color);
     text-align: center;
     width: 235px;
@@ -276,6 +283,7 @@ body>#project-content {
     background-color: var(--primary-color);
     padding: 1rem;
     margin: 1rem;
+    border-radius: 25px;
 
     #trait-img {
         background-color: black;
@@ -455,6 +463,20 @@ body>#project-content {
         margin-left: 1rem;
         padding: 25px;
     }
+}
+
+#lg-content {
+    justify-self: center;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    flex-wrap: wrap;
+    margin-right: 1rem;
+}
+
+#lg-content > h2 {
+    justify-self: flex-start;
+    font-size: 30px;
 }
 
 /*Footer assets*/
