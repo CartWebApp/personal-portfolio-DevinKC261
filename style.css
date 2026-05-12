@@ -77,18 +77,24 @@ nav {
 /*-----------------------------------------*/
 
 #hero {
+    display: flex;
+    justify-content: center;
     margin: 0;
     height: 86%;
     width: 100%;
-    align-content: center;
-    background-color: white;
-    /*Temp color*/
+    background-image: url(imgs/Hero-BG.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-bottom: 4em;
+    align-content: center;
 
     /*Needs a drawn background*/
     h1 {
-        color: black;
-        font-size: 50px;
+        background-color: black;
+        color: white;
+        font-size: 85px;
+        align-self: center;
+        width: 155vh;
     }
 }
 
@@ -103,7 +109,7 @@ h1 {
 
 
 h2 {
-    font-size:45px;
+    font-size: 45px;
     text-align: center;
     color: white;
 }
@@ -166,29 +172,37 @@ body>#project-content {
     grid-row-start: span 2;
     grid-row-end: span 2;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     border-radius: 25px;
     background-color: var(--primary-color);
     /*Temp color*/
     width: 230px;
-    ;
     height: 300px;
     margin: 2em;
+    padding: 5px;
 
     #content {
-        background-color: blue;
-        /*Temp color*/
-        margin: 1rem;
-        width: 80%;
-        height: 50%;
+        width: 200px;
+        height: 200px;
     }
 
     #buttons {
         grid-column-start: 6;
         grid-column-end: span 8;
     }
+
+    h3 {
+        font-size: 25px;
+    }
 }
 
+#project-boxes:hover {
+    cursor: pointer;
+}
+#content > .first {
+    background-image: url(imgs/Pawpal/Pawpal-logo.svg);
+}
 .project-container {
     display: grid;
     grid-template-columns: repeat(12, auto);
@@ -200,6 +214,14 @@ body>#project-content {
     margin-right: 2rem;
 }
 
+#project-overview {
+    background-color: red;
+}
+
+#overlay {
+    position: relative;
+    display: none;
+}
 /*----------------Button assets----------------*/
 
 
@@ -225,27 +247,28 @@ body>#project-content {
 }
 
 #intro {
-    margin: 5vh;
+    margin: 3rem;
     display: flex;
     grid-column-start: span 12;
     grid-row-start: span 2;
-    background-color: var(--primary-color);
     height: fit-content;
     width: fit-content;
-    padding: 1rem;
     border-radius: 25px;
 }
 
 #intro-img {
-    width: 600px;
-    height: 600px;
-    background-color: red;
-    margin-right: 5rem;
+    width: 900px;
+    height: 800px;
+    background-image: url(imgs/Devin-img.JPG);
+    background-size: cover;
+    margin-right: 2rem;
+    border:  solid 2PX var(--primary-color);
+    border-radius: 15px;
 }
 
 #intro-text {
-    background-color: red;
-    padding: 1rem;
+    color: white;
+    max-width: 900px;
     height: fit-content;
 }
 
@@ -276,6 +299,9 @@ body>#project-content {
     }
 }
 
+#word-link {
+    text-decoration: none;
+}
 #trait {
     display: flex;
     width: fit-content;
@@ -297,7 +323,7 @@ body>#project-content {
 }
 
 #trait-container {
-    margin: 5vh;
+    margin: 3rem;
 
     h2 {
         justify-self: flex-start;
@@ -341,6 +367,11 @@ body>#project-content {
         height: 50px;
         border: solid 2px black;
         background-color: var(--primary-color);
+
+        a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
     }
 }
 
@@ -349,11 +380,13 @@ body>#project-content {
     background-color: var(--hover-color);
 }
 
+
 #resume {
     background-color: black;
     width: 550px;
     height: 800px;
-    background-image: url(imgs/resume/Devin\ chantirath.pdf);
+    background-image: url(imgs/resume/Devin\ chantirath.jpg);
+    background-size: cover;
 }
 
 
@@ -381,6 +414,11 @@ body>#project-content {
         cursor: pointer;
         background-color: var(--hover-color);
     }
+}
+
+#exlink {
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 
@@ -442,6 +480,7 @@ body>#project-content {
 
     a {
         margin-bottom: 1rem;
+        color: black;
     }
 }
 
@@ -461,10 +500,18 @@ body>#project-content {
     img {
         border-radius: 25px;
         width: 250px;
-        height:  250px;
-    };
+        height: 250px;
+        border:solid 2px black;
+    }
 
     p {
+        margin-left: 1rem;
+        padding: 25px;
+    }
+
+    a {
+        font-size: 25px;
+        color: black;
         margin-left: 1rem;
         padding: 25px;
     }
@@ -479,7 +526,7 @@ body>#project-content {
     margin-right: 1rem;
 }
 
-#lg-content > h2 {
+#lg-content>h2 {
     justify-self: flex-start;
     font-size: 30px;
 }
